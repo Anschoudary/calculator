@@ -5,8 +5,8 @@ function addNumbers() {
   const sum = n1 + n2;
 
   // Disable buttons/links relying on online functionality
-  print(wifi.getStatus());
-  wifi.stopAP();
+  console.log(wifi.getStatus());
+  console.log(wifi.stopAP());
   const buttons = document.querySelectorAll("button[data-requires-online], a[data-requires-online]");
   buttons.forEach(button => {
     button.disabled = true;
