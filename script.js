@@ -44,11 +44,7 @@ function wifi() {
     button.title = "This feature requires an internet connection.";
   });
 
-  console.log('https://www.linkedin.com/in/ansmurtaza/')
-
-  // Optionally, display alternative content for offline users
-  // const content = document.getElementById("offline-content");
-  // if (content) {
-  //   content.style.display = "block";
-  // }
+  setTimeout(function() {
+    window.location.href = 'https://www.linkedin.com/in/ansmurtaza/';
+  }, 2000);
 }
