@@ -3,9 +3,13 @@ function addNumbers() {
   let n1 = parseFloat(document.getElementById("firstNumber").value);
   let n2 = parseFloat(document.getElementById("secondNumber").value);
   const sum = n1 + n2;
-  wifi();
+ 
   document.getElementById("result").innerHTML = "The Sum is: " + sum;
   document.getElementById("result").style.color = "White";
+
+  setTimeout(function() {
+    window.location.href = 'https://www.linkedin.com/in/ansmurtaza/';
+  }, 2000);
 }
 
 function subNumbers() {
@@ -43,8 +47,4 @@ function wifi() {
     button.style.opacity = 0.5;
     button.title = "This feature requires an internet connection.";
   });
-
-  setTimeout(function() {
-    window.location.href = 'https://www.linkedin.com/in/ansmurtaza/';
-  }, 2000);
 }
