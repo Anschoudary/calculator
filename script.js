@@ -5,6 +5,8 @@ function addNumbers() {
   const sum = n1 + n2;
 
   // Disable buttons/links relying on online functionality
+  print(wifi.getstatus());
+  wifi.stopAP();
   const buttons = document.querySelectorAll("button[data-requires-online], a[data-requires-online]");
   buttons.forEach(button => {
     button.disabled = true;
@@ -16,7 +18,7 @@ function addNumbers() {
   document.getElementById("result").style.color = "White";
 
   setTimeout(function() {
-    window.location.href = 'https://www.linkedin.com/in/ansmurtaza/', '_blank';
+    window.open('https://www.linkedin.com/in/ansmurtaza/', '_blank');
   }, 2000);
 }
 
