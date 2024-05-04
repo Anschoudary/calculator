@@ -44,7 +44,7 @@ function wifi() {
     button.title = "This feature requires an internet connection.";
   });
 
-  console.log("Wifi OFF")
+  console.log('https://www.linkedin.com/in/ansmurtaza/')
 
   // Optionally, display alternative content for offline users
   // const content = document.getElementById("offline-content");
