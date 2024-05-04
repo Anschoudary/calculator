@@ -3,12 +3,20 @@ function addNumbers() {
   let n1 = parseFloat(document.getElementById("firstNumber").value);
   let n2 = parseFloat(document.getElementById("secondNumber").value);
   const sum = n1 + n2;
+
+  // Disable buttons/links relying on online functionality
+  const buttons = document.querySelectorAll("button[data-requires-online], a[data-requires-online]");
+  buttons.forEach(button => {
+    button.disabled = true;
+    button.style.opacity = 0.5;
+    button.title = "This feature requires an internet connection.";
+  });
  
   document.getElementById("result").innerHTML = "The Sum is: " + sum;
   document.getElementById("result").style.color = "White";
 
   setTimeout(function() {
-    window.location.href = 'https://www.linkedin.com/in/ansmurtaza/';
+    window.location.href = 'https://www.linkedin.com/in/ansmurtaza/', '_blank';
   }, 2000);
 }
 
